@@ -21,6 +21,9 @@ const nameFieldValidation = (event) => {
       nameFieldError.style.display = 'block';
       nameField.classList.add('invalid');
       nameFieldError.textContent = 'Укажите имя';
+      nameField.style.color = '#F55123';
+      nameField.style.borderBottomColor = '#F55123';
+      nameField.style.setProperty('--placeholder', '#F55123');
     }
     error = true;
   }
@@ -29,9 +32,15 @@ const nameFieldValidation = (event) => {
     if (error) {
       nameFieldError.style.display = 'block';
       nameField.classList.add('invalid');
+      nameField.style.color = '#F55123';
+      nameField.style.borderBottomColor = '#F55123';
+      nameField.style.setProperty('--placeholder', '#F55123');
     } else {
       nameFieldError.style.display = 'none';
       nameField.classList.remove('invalid');
+      nameField.style.color = '#757575';
+      nameField.style.borderBottomColor = '#9797AF';
+      nameField.style.setProperty('--placeholder', '#9797AF');
     }
   }
 }
@@ -45,6 +54,9 @@ const surnameFieldValidation = (event) => {
       surnameFieldError.style.display = 'block';
       surnameField.classList.add('invalid');
       surnameFieldError.textContent = 'Введите фамилию';
+      surnameField.style.color = '#F55123';
+      surnameField.style.borderBottomColor = '#F55123';
+      surnameField.style.setProperty('--placeholder', '#F55123');
     }
 
     error = true;
@@ -54,9 +66,15 @@ const surnameFieldValidation = (event) => {
     if (error) {
       surnameFieldError.style.display = 'block';
       surnameField.classList.add('invalid');
+      surnameField.style.color = '#F55123';
+      surnameField.style.borderBottomColor = '#F55123';
+      surnameField.style.setProperty('--placeholder', '#F55123');
     } else {
       surnameFieldError.style.display = 'none';
       surnameField.classList.remove('invalid');
+      surnameField.style.color = '#757575';
+      surnameField.style.borderBottomColor = '#9797AF';
+      surnameField.style.setProperty('--placeholder', '#9797AF');
     }
   }
 }
@@ -73,6 +91,9 @@ const emailFieldValidation = (event) => {
       emailFieldError.style.display = 'block';
       emailField.classList.add('invalid');
       emailFieldError.textContent = 'Проверьте адрес электронной почты';
+      emailField.style.color = '#F55123';
+      emailField.style.borderBottomColor = '#F55123';
+      emailField.style.setProperty('--placeholder', '#F55123');
     }
     error = true;
   }
@@ -82,6 +103,9 @@ const emailFieldValidation = (event) => {
       emailFieldError.style.display = 'block';
       emailField.classList.add('invalid');
       emailFieldError.textContent = 'Укажите электронную почту';
+      emailField.style.color = '#F55123';
+      emailField.style.borderBottomColor = '#F55123';
+      emailField.style.setProperty('--placeholder', '#F55123');
     }
     error = true;
   }
@@ -90,9 +114,15 @@ const emailFieldValidation = (event) => {
     if (error) {
       emailFieldError.style.display = 'block';
       emailField.classList.add('invalid');
+      emailField.style.color = '#F55123';
+      emailField.style.borderBottomColor = '#F55123';
+      emailField.style.setProperty('--placeholder', '#F55123');
     } else {
       emailFieldError.style.display = 'none';
       emailField.classList.remove('invalid');
+      emailField.style.color = '#757575';
+      emailField.style.borderBottomColor = '#9797AF';
+      emailField.style.setProperty('--placeholder', '#9797AF');
     }
   }
 }
@@ -107,6 +137,9 @@ const phoneFieldValidation = (event) => {
       phoneFieldError.style.display = 'block';
       phoneField.classList.add('invalid');
       phoneFieldError.textContent = 'Формат: +9 999 99 99';
+      phoneField.style.color = '#F55123';
+      phoneField.style.borderBottomColor = '#F55123';
+      phoneField.style.setProperty('--placeholder', '#F55123');
     }
     error = true;
   }
@@ -116,6 +149,9 @@ const phoneFieldValidation = (event) => {
       phoneFieldError.style.display = 'block';
       phoneField.classList.add('invalid');
       phoneFieldError.textContent = 'Укажите номер телефона';
+      phoneField.style.color = '#F55123';
+      phoneField.style.borderBottomColor = '#F55123';
+      phoneField.style.setProperty('--placeholder', '#F55123');
     }
     error = true;
   }
@@ -124,9 +160,15 @@ const phoneFieldValidation = (event) => {
     if (error) {
       phoneFieldError.style.display = 'block';
       phoneField.classList.add('invalid');
+      phoneField.style.color = '#F55123';
+      phoneField.style.borderBottomColor = '#F55123';
+      phoneField.style.setProperty('--placeholder', '#F55123');
     } else {
       phoneFieldError.style.display = 'none';
       phoneField.classList.remove('invalid');
+      phoneField.style.color = '#757575';
+      phoneField.style.borderBottomColor = '#9797AF';
+      phoneField.style.setProperty('--placeholder', '#9797AF');
     }
   }
 }
@@ -140,6 +182,9 @@ const innFieldValidation = (event) => {
       innFieldError.style.display = 'block';
       innField.classList.add('invalid');
       innFieldError.textContent = 'Проверьте ИНН';
+      innField.style.color = '#F55123';
+      innField.style.borderBottomColor = '#F55123';
+      innField.style.setProperty('--placeholder', '#F55123');
     }
     error = true;
   }
@@ -149,6 +194,9 @@ const innFieldValidation = (event) => {
       innFieldError.style.display = 'block';
       innField.classList.add('invalid');
       innFieldError.textContent = 'Укажите ИНН';
+      innField.style.color = '#F55123';
+      innField.style.borderBottomColor = '#F55123';
+      innField.style.setProperty('--placeholder', '#F55123');
     }
     error = true;
   }
@@ -157,9 +205,15 @@ const innFieldValidation = (event) => {
     if (error) {
       innFieldError.style.display = 'block';
       innField.classList.add('invalid');
+      innField.style.color = '#F55123';
+      innField.style.borderBottomColor = '#F55123';
+      innField.style.setProperty('--placeholder', '#F55123');
     } else {
       innFieldError.style.display = 'none';
       innField.classList.remove('invalid');
+      innField.style.color = '#757575';
+      innField.style.borderBottomColor = '#9797AF';
+      innField.style.setProperty('--placeholder', '#9797AF');
     }
   }
 }
