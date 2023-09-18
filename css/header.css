@@ -48,7 +48,7 @@ header {
   padding: 0px, 20px, 0px, 20px;
 }
 
-.nav_menu {
+.burger-menu {
   border: 1px solid #FFFFFF73;
   margin-right: 16px;
   border-radius: 8px;
@@ -61,11 +61,11 @@ header {
   background-color: unset;
 }
 
-.nav_menu:hover {
+.burger-menu:hover {
   border: 1px solid #FFF;
 }
 
-.nav_menu .line {
+.burger-menu .line {
   background-color: #FFFFFF;
   height: 4px;
   border-radius: 8px;
@@ -126,7 +126,7 @@ header {
     height: 77px;
   }
 
-  .nav_menu {
+  .burger-menu {
     border: none;
     width: 22.5px;
     height: 18.5px;
@@ -137,18 +137,18 @@ header {
     padding: 13px 15px
   }
 
-  .nav_menu:hover {
+  .burger-menu:hover {
     border: none;
   }
 
-  .nav_menu .line {
+  .burger-menu .line {
     background-color: #FFFFFF;
     height: 3px;
     border-radius: 8px;
     width: 22.5px;
   }
 
-  .nav_menu .line:last-child {
+  .burger-menu .line:last-child {
     width: 18px;
   }
 
@@ -192,11 +192,11 @@ header {
     height: 24px;
   }
 
-  header .nav_menu {
+  header .burger-menu {
     margin-right: 11px;
   }
 
-  header .nav_menu .line {
+  header .burger-menu .line {
     height: 2px;
   }
 
