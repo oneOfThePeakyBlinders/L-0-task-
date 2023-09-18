@@ -1,0 +1,43 @@
+footer {
+  /* height: 64px; */
+  text-align: center;
+  font-size: 13px;
+  color: #FFF;
+  /* line-height: 64px; */
+}
+
+footer nav.navigate {
+  display: none;
+}
+
+footer nav .nav-icons {
+  height: 28px;
+  position: relative;
+  width: 28px;
+}
+
+footer svg path:hover {
+  fill: #CB11AB;
+}
+
+.amount-footer {
+  top: -4px;
+  right: -6px;
+}
+
+.footer-title {
+  height: 64px;
+  line-height: 64px;
+}
+
+.nav-container {
+  /* height: 56px; */
+  padding: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  footer nav.navigate {
+    display: block;
+    background-color: #FFF;
+  }
+}

@@ -1,0 +1,101 @@
+.way-to-get-container {
+  padding: 17px 24px 23px 24px;
+  background-color: #FFF;
+  border-radius: 16px;
+}
+
+.way-to-get {
+  background-color: #FFF;
+  padding: 0;
+  margin: 22px 0 0 0;
+}
+
+.change-get-items-button button {
+  border: none;
+  color: #CB11AB;
+  background-color: unset;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.way-to-get-images {
+  position: relative;
+  color: #FFF;
+  margin-right: 8px;
+}
+
+.delivery-method-details {
+  font-weight: 600;
+  margin-right: 32px;
+  width: 153px;
+}
+
+.delivery-method-details-height {
+  height: 56px;
+}
+
+.delivery-method-container {
+  margin-bottom: 16px;
+}
+
+.point-of-issue {
+  height: 42px;
+}
+
+.cost-of-delivery {
+  height: 24px;
+}
+
+@media screen and (max-width: 800px) {
+  .delivery-method-details {
+    margin-bottom: 4px;
+  }
+
+  .way-to-get-container {
+    margin-bottom: 12px;
+  }
+
+  .way-to-get {
+    margin: -3px 0 0 0;
+  }
+
+  .point-of-issue,
+  .delivery-method-container {
+    display: block;
+  }
+
+  .point-of-issue,
+  .delivery-method-details-height,
+  .cost-of-delivery {
+    height: auto;
+  }
+
+  .delivery-method-details-data {
+    margin-bottom: 16px;
+  }
+
+  .delivery-method-details-height {
+    margin-bottom: 20px;
+  }
+
+  .cost-of-delivery {
+    margin-bottom: 18px;
+  }
+
+  .change-get-items-button button {
+    margin: 0;
+  }
+
+  .way-to-get-title {
+    margin-bottom: 12px;
+  }
+
+  .way-to-get-container {
+    padding: 15px;
+  }
+
+  .way-to-get-container h2 {
+    font-size: 20px;
+  }
+}

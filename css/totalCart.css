@@ -1,0 +1,153 @@
+.total-cart {
+  height: max-content;
+  max-width: 429px;
+  box-shadow: 0px 2px 10px 0px #00000026;
+  background-color: #FFF;
+  border-radius: 16px;
+  margin-left: 32px;
+  padding: 15px 24px 24px 24px;
+  position: relative;
+  top: -10px;
+}
+
+.total-cart .total {
+  margin-bottom: 8px;
+}
+
+.total-details {
+  height: 24px;
+}
+
+.total-cart .total,
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.delivery-details-title {
+  font-weight: 700;
+}
+
+.total-cart .total span {
+  font-size: 20px;
+}
+
+.delivery-details .address {
+  line-height: 19px;
+  margin: 4px 0 10px 0;
+}
+
+.delivery-details .address span {
+  margin-top: 3px;
+  color: #CB11AB;
+  border-bottom: 1px dashed #CB11AB;
+}
+
+.return-shipping {
+  padding: 8px 8px 12px 8px;
+  background-color: #F6F6FA;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 22px;
+}
+
+.bank-icon {
+  margin-top: 2px;
+}
+
+.return-shipping-inCart {
+  height: 52px;
+  margin-top: 12px;
+}
+
+.return-shipping .price-shipping {
+  margin-right: 9px;
+  width: 22px;
+  height: 22px;
+}
+
+.return-shipping span {
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+  color: #0CB477;
+}
+
+.bank-details {
+  height: 24px;
+  margin-top: 4px;
+  align-items: center;
+}
+
+.submit button {
+  background-color: #CB11AB;
+  color: #FFF;
+  height: 44px;
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.inline {
+  border-bottom: 1px solid #dadada;
+}
+
+.free-button-hover {
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .total-cart {
+    max-width: 303px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .total-cart {
+    max-width: 891px;
+    margin: 0;
+    border-radius: 0;
+    background-color: unset;
+    box-shadow: none;
+    padding: 0 16px;
+  }
+
+  .way-to-get-container .return-shipping {
+    padding: 0 8px;
+    padding-bottom: 5.5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .total-cart {
+    margin-top: 34px;
+    height: 396px
+  }
+
+  .mobile-cart-wrapper {
+    background-color: #F0ECF4;
+  }
+
+  .delivery-details {
+    margin: 16px 0 24px 0;
+  }
+
+  .mobile-cart-wrapper-margins {
+    margin: 16px 0;
+  }
+
+  .return-shipping {
+    padding: 6px 8px 12px 8px;
+  }
+
+  .cart-mobile-version {
+    display: none;
+  }
+
+  .total-cart .total,
+  .total-cart .total h2 {
+    font-size: 20px;
+  }
+}

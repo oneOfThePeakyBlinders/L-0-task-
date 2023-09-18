@@ -1,0 +1,165 @@
+.user-data {
+  height: 128px;
+}
+
+.recipient {
+  height: 216px;
+}
+
+.user-data input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #9797AF;
+  width: 100%;
+  display: block;
+  max-width: 338px;
+  padding-bottom: 3px;
+  font-size: 16px;
+}
+
+.user-data input::placeholder {
+  font-size: 16px;
+}
+
+.input-field-container p {
+  font-size: 13px;
+}
+
+.input-fields {
+  height: 27px;
+  font-size: 16px;
+  position: relative;
+}
+
+.input-fields p {
+  height: 16px;
+  width: 100%;
+}
+
+.input-field-container {
+  max-width: 700px;
+}
+
+.paddings {
+  padding-bottom: 20px;
+}
+
+.input-field-container div {
+  max-width: 700px;
+}
+
+.input-field-container.first {
+  margin-top: 36px;
+}
+
+.input-field-container.second {
+  margin-top: 22px;
+}
+
+.input-field-container.first div {
+  width: 48.3%;
+}
+
+.input-field-container.second div {
+  width: 31%;
+}
+
+
+.label-position.docs {
+  font-size: 12px;
+}
+
+.payment-recipient-title {
+  margin-bottom: 19px;
+}
+
+#name-field-error,
+#surname-field-error,
+#phone-field-error,
+#email-field-error,
+#inn-field-error {
+  display: none;
+  color: #F55123;
+}
+
+.invalid {
+  color: #F55123;
+}
+
+@media screen and (max-width: 800px) {
+  .payment-recipient-title {
+    margin-bottom: 9px;
+  }
+
+  .payment-recipient-container {
+    height: 124px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .recipient {
+    height: 420px;
+  }
+
+  .user-data,
+  .input-fields,
+  .input-fields p {
+    height: auto;
+  }
+
+  #inn-field-error {
+    bottom: -20px;
+  }
+
+  .input-field-container.first,
+  .input-field-container.second,
+  .label-position.docs {
+    margin: 0;
+  }
+
+  .recipient-title {
+    margin-bottom: 8px;
+  }
+
+  .input-field-container p {
+    font-size: 12px;
+    height: 16px;
+    position: absolute;
+  }
+
+  .user-data input {
+    max-width: 100%;
+  }
+
+  .input-fields {
+    height: 56px;
+    margin-bottom: 16px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .label-position .phone {
+    top: -4px;
+    position: absolute;
+  }
+
+
+  .label-position.phone-label {
+    margin-bottom: 49px;
+  }
+
+  .label-position.docs {
+    bottom: -4px;
+  }
+
+  .user-data .input-field-container .input-fields {
+    width: 100%;
+  }
+
+  .user-data .input-field-container {
+    flex-wrap: wrap;
+  }
+
+
+}
