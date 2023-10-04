@@ -40,11 +40,21 @@
 .cart-items .title {
   font-size: 28px;
   font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.28px;
   margin-bottom: 25px;
 }
 
 .menu-action {
   width: 125px;
+}
+
+.menu-action p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
 }
 
 .section-line {
@@ -55,7 +65,8 @@
 }
 
 .details {
-  margin: 6px 0 0 0;
+  margin: 8px 0 0 0;
+  gap: 1px;
 }
 
 .details,
@@ -64,11 +75,11 @@
 }
 
 .details-company-title {
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .details-company {
-  margin-top: 6px;
+  margin-top: 7px;
   color: #9797AF;
 }
 
@@ -101,9 +112,11 @@
 }
 
 .item-title {
-  line-height: 24px;
   width: 100%;
   max-width: 250px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px
 }
 
 .item-amount {
@@ -122,20 +135,26 @@
   width: 110px;
   text-align: end;
   word-spacing: -2px;
+  margin-top: -2px;
 }
 
 .price {
   font-size: 20px;
-  line-height: 20px;
+  font-style: normal;
   font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.2px;
 }
 
 .currency {
   font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-left: 3px;
 }
 
 .price-details .discount {
-  margin-top: 4px;
+  margin-top: 2px;
   position: relative;
 }
 
@@ -165,8 +184,6 @@
   margin: 20px 0 11px 0;
 }
 
-
-/* checkbox css */
 
 .checkbox {
   margin-right: 12px;

@@ -12,7 +12,7 @@ header {
 .title h1 {
   font-weight: 600;
   font-size: 28px;
-  line-height: 26px;
+  line-height: 24px;
   letter-spacing: 0.5px;
   font-variant: all-small-caps;
   color: #FFFFFF;
@@ -85,6 +85,9 @@ header {
 }
 
 .nav p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
   margin-top: 4px;
 }
 

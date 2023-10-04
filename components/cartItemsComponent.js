@@ -38,14 +38,14 @@ const renderHtml = (cartItems) => {
               <div class="item-title">${item.title}</div>
               ${item.color || item.size ? `
               <div class="details d-flex">
-                ${item.color ? `<div class="item-color ml-16">Цвет: ${item.color}</div>` : ''}
-                ${item.size ? `<div class="item-size">Размер: ${item.size}</div>` : ''}
+                ${item.color ? `<div style="font-weight: 400;line-height: 16px" class="item-color ml-16">Цвет: ${item.color}</div>` : ''}
+                ${item.size ? `<div style="font-weight: 400;line-height: 16px" class="item-size">Размер: ${item.size}</div>` : ''}
               </div>` : ''}
 
               <div class="details-company">
-                <div class="details-company-title">Коледино WB</div>
+                <div style="font-weight: 400;line-height: 16px;" class="details-company-title">Коледино WB</div>
                 <div class="details-company-name d-flex align-center">
-                  <div class="h-20">
+                  <div style="font-weight: 400;line-height: 16px;" class="h-20">
                     ${item.company}
                   </div>
                   <div class="h-20 cursor-pointer free-button-hover">
@@ -73,7 +73,7 @@ const renderHtml = (cartItems) => {
                   <span id="left" class="item-amount">${item.inCart}</span>
                   <button ${item.left === 0 ? "disabled" : ""} data-id="${item.id}" id="buttonIncrement" class="${item.left === 0 ? "" : "cursor-pointer"}">+</button>
                 </div>
-                ${item.left <= 2 ? `<div class="left">Осталось ${item.left} шт.</div>` : ''}
+                ${item.left <= 2 ? `<div style="font-weight: 400;line-height: 16px;" class="left">Осталось ${item.left} шт.</div>` : ''}
               </div>
               <div class="cart-icons d-flex justify-end">
                 <div data-id="${item.id}" id="like-icon" class="icons ml-16 cursor-pointer">
@@ -99,7 +99,9 @@ const renderHtml = (cartItems) => {
               </div>
             </div>
             <div class="price-details" >
-              <h2 style="${item.priceDiscount * item.inCart > 99999 ? 'font-size: 16px' : ''}" class="price" >${new Intl.NumberFormat('ru-RU').format(String(Math.ceil(item.priceDiscount * item.inCart))).replace(',', '.')}<span class="currency"> сом</span></h2>
+            <div>
+                 <h2 style="${item.priceDiscount * item.inCart > 99999 ? 'font-size: 16px' : ''}" class="price" >${new Intl.NumberFormat('ru-RU').format(String(Math.ceil(item.priceDiscount * item.inCart))).replace(',', '.')}<span class="currency"> сом</span></h2>                                     
+                 </div>           
               <div class="discount">
                 <span class="cursor-pointer free-button-hover">${new Intl.NumberFormat('ru-RU').format(String(Math.ceil(Math.ceil(item.price * item.inCart)))).replace(',', '.')} сом</span>
                 <div class="hover-modal discount-hover">
