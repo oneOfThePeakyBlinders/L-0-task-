@@ -44,7 +44,7 @@ const renderHtml = (cartItems) => {
 
               <div class="details-company">
                 <div style="font-weight: 400;line-height: 16px;" class="details-company-title">Коледино WB</div>
-                <div class="details-company-name d-flex align-center">
+                <div class="details-company-name d-flex">
                   <div style="font-weight: 400;line-height: 16px;" class="h-20">
                     ${item.company}
                   </div>
@@ -103,11 +103,11 @@ const renderHtml = (cartItems) => {
                  <h2 style="${item.priceDiscount * item.inCart > 99999 ? 'font-size: 16px' : ''}" class="price" >${new Intl.NumberFormat('ru-RU').format(String(Math.ceil(item.priceDiscount * item.inCart))).replace(',', '.')}<span class="currency"> сом</span></h2>                                     
                  </div>           
               <div class="discount">
-                <span class="cursor-pointer free-button-hover">${new Intl.NumberFormat('ru-RU').format(String(Math.ceil(Math.ceil(item.price * item.inCart)))).replace(',', '.')} сом</span>
+                <span class="cursor-pointer free-button-hover">${new Intl.NumberFormat('ru-RU').format(String(Math.ceil(Math.ceil(item.price * item.inCart)))).replace(',', '.')} <span> сом</span></span>
                 <div class="hover-modal discount-hover">
                   <div class="d-flex justify-content-between">
                     <div class="color-gray">Скидка ${Math.ceil(100 - (item.priceDiscount * 100 / item.price))}%</div>
-                    <div>−${new Intl.NumberFormat('ru-RU').format(String(Math.ceil(item.price * item.inCart - item.priceDiscount * item.inCart))).replace(',', '.')} сом</div>
+                    <div>−${new Intl.NumberFormat('ru-RU').format(String(Math.ceil(item.price * item.inCart - item.priceDiscount * item.inCart))).replace(',', '.')} </div>
                   </div >
                   <div class="d-flex justify-content-between">
                     <div class="color-gray">Скидка покупателя 0%</div>

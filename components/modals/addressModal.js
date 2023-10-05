@@ -1,6 +1,4 @@
 
-
-
 import { cartItemsData } from '../../assets/data/data.js';
 import { renderDeliveryHtml } from '../deliveryComponent.js';
 
