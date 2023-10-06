@@ -78,7 +78,7 @@ export const renderDeliveryHtml = (items) => {
           </div>
           <div class="d-flex cost-of-delivery delivery-method-container">
             <div class="delivery-method-details">Стоимость доставки</div>
-            <div>
+            <div style="font-size: 16px;font-weight: 400;line-height: 24px">
               Бесплатно
             </div>
           </div>
@@ -106,7 +106,7 @@ export const renderDeliveryHtml = (items) => {
                 </defs>
               </svg>
             </div>
-            <div style="position: relative;">
+            <div style="position: relative;font-size: 13px;font-weight: 400;line-height: 16px;">
               Обратная доставка товаров на склад при отказе — <span class="cursor-pointer free-button-hover">бесплатно</span>
               <div class="hover-modal hover-modal-second">
                 Если товары вам не подойдут, мы вернем <br>их обратно на склад — это бесплатно

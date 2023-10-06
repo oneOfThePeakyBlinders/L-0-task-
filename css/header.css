@@ -9,6 +9,27 @@ header {
   padding: 16px 24px;
 }
 
+.container button {
+  border: 1px solid rgba(255, 255, 255, 0.4509803922);
+  margin-right: 16px;
+  border-radius: 8px;
+  padding: 12px 9px;
+  height: 47.7px;
+  width: 48px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  background-color: unset;
+  line-height: 8px;
+}
+.container button svg {
+  width: 28px;
+  height: 24px;
+}
+.container button:hover {
+  border: 1px solid #fff;
+}
+
 .title h1 {
   font-weight: 600;
   font-size: 28px;
@@ -46,6 +67,27 @@ header {
   border-radius: 36px;
   display: flex;
   padding: 0px, 20px, 0px, 20px;
+}
+
+header .header-container button {
+  border: 1px solid rgba(255, 255, 255, 0.4509803922);
+  margin-right: 16px;
+  border-radius: 8px;
+  padding: 12px 9px;
+  height: 47.7px;
+  width: 48px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  background-color: unset;
+  line-height: 8px;
+}
+header .header-container button svg {
+  width: 28px;
+  height: 24px;
+}
+header .header-container button:hover {
+  border: 1px solid #fff;
 }
 
 .burger-menu {
@@ -129,7 +171,7 @@ header {
     height: 77px;
   }
 
-  .burger-menu {
+  .container button {
     border: none;
     width: 22.5px;
     height: 18.5px;
@@ -140,11 +182,11 @@ header {
     padding: 13px 15px
   }
 
-  .burger-menu:hover {
+  .container button:hover {
     border: none;
   }
 
-  .burger-menu .line {
+  .container button .svg {
     background-color: #FFFFFF;
     height: 3px;
     border-radius: 8px;
@@ -202,9 +244,61 @@ header {
   header .burger-menu .line {
     height: 2px;
   }
+}
 
-  header .container .title h1 {
-    letter-spacing: 0.5px;
-    line-height: 15px;
-  }
+header .container .navbar {
+  height: 56px;
+  display: flex;
+  width: auto;
+  gap: 40px;
+  text-align: center;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+header .container .navbar span {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  width: 55px;
+  color: white;
+}
+header .container .navbar .svg_cart {
+  width: 29px;
+  height: 29px;
+  margin-right: 6px;
+}
+header .container .navbar .icon {
+  width: 56px;
+  height: 30px;
+}
+header .container .navbar .profile {
+  width: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+header .container .navbar .cart {
+  width: 56px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+header .container .navbar .cart .cart-item-amount {
+  position: absolute;
+  background-color: #F55123;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  top: -19px;
+  right: 10px;
+  text-align: center;
 }
